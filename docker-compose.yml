@@ -23,5 +23,6 @@ services:
       - ./private/logs/nginx:/var/log/nginx
 
   # Coming Soon..
-  # krispy:
+  # app:
+  # container_name: krispy-app
   #  build:
