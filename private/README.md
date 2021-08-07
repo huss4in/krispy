@@ -17,6 +17,7 @@
 
   ```
   API_KEY={CLOUDFLARE_API_KEY}
+  DOMAIN={DOMAIN}
   ```
 
 - ### [`certs/`](certs)
