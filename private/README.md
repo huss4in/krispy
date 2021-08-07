@@ -13,15 +13,15 @@
 └── README.md
 ```
 
-- ## [`.env`](.env)
+- ### [`.env`](.env)
 
   ```
   API_KEY={CLOUDFLARE_API_KEY}
   ```
 
-- ## [`certs/`](certs)
+- ### [`certs/`](certs)
 
-  - ## [`cert.crt`](cert.crt)
+  - ### [`cert.crt`](certs/cert.crt)
 
     ```
     -----BEGIN CERTIFICATE-----
@@ -31,7 +31,7 @@
     -----END CERTIFICATE-----
     ```
 
-  - ## [`cert.key`](cert.key)
+  - ### [`cert.key`](certs/cert.key)
 
     ```
     -----BEGIN PRIVATE KEY-----
