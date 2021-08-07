@@ -1,0 +1,146 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Fira Code";
+  color: white;
+  height: 100%;
+}
+
+.background-image {
+  background-image: url("background.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+
+/* Position text in the top-left corner */
+.top-left p {
+  position: absolute;
+  font-size: 3.5vh;
+  top: 0.5em;
+  left: 0.5em;
+  -webkit-transition: 1s;
+  transition: 1s;
+  margin: 0;
+  text-shadow: 0 0 1em black;
+}
+
+.top-left p:hover, .top-left p:focus {
+  -webkit-transition: text-shadow 0.5s;
+  transition: text-shadow 0.5s;
+  text-shadow: 0 0 0.3em black;
+}
+
+.center {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 100vh;
+      grid-template-rows: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.center #main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 10vh;
+}
+
+.center #main h1 {
+  text-transform: uppercase;
+  font-size: 6vh;
+  margin: 4vh 0;
+  text-shadow: 0 0 1em black;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.center #main h1:hover, .center #main h1:focus {
+  -webkit-transition: text-shadow 0.5s;
+  transition: text-shadow 0.5s;
+  text-shadow: 0 0 0.3em black;
+}
+
+.center #main div {
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+}
+
+.center #main div hr {
+  width: 100%;
+  height: 1px;
+  border-radius: 10em;
+  background-color: white;
+  opacity: 0.5;
+  border: none;
+  -webkit-box-shadow: 0 0 15px 1px black;
+          box-shadow: 0 0 15px 1px black;
+  -webkit-transition: 1s, -webkit-box-shadow 0.5s;
+  transition: 1s, -webkit-box-shadow 0.5s;
+  transition: 1s, box-shadow 0.5s;
+  transition: 1s, box-shadow 0.5s, -webkit-box-shadow 0.5s;
+}
+
+.center #main div hr:hover, .center #main div hr:focus {
+  -webkit-transition: -webkit-box-shadow 0.5s;
+  transition: -webkit-box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
+  -webkit-box-shadow: 0 0 5px 1px black;
+          box-shadow: 0 0 5px 1px black;
+}
+
+.center #main div #time {
+  font-size: 3vh;
+  margin: 3vh 0;
+  text-shadow: 0 0 1em black;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.center #main div #time:hover, .center #main div #time:focus {
+  -webkit-transition: text-shadow 0.5s;
+  transition: text-shadow 0.5s;
+  text-shadow: 0 0 0.3em black;
+}
+
+.center #main div #ms {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  text-align: right;
+  font-size: 2vh;
+  width: 3em;
+  text-shadow: 0 0 1em black;
+  margin: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.center #main div #ms:hover, .center #main div #ms:focus {
+  -webkit-transition: text-shadow 0.5s;
+  transition: text-shadow 0.5s;
+  text-shadow: 0 0 0.3em black;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 0;
+  left: 1em;
+  font-size: 2vh;
+  text-shadow: 0 0 0.5em black;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+/*# sourceMappingURL=style.css.map */
