@@ -1,2 +1,7 @@
-# krispy
-Krispy Bot
+# Krispy Bot
+
+## Deploy
+
+```sh
+docker-compose up
+```
