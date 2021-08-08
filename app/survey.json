@@ -1,0 +1,310 @@
+{
+    "url": "http://mykrispykreme-bhr.com",
+    "receipt": {
+        "number": "21715",
+        "date": {
+            "year": "2021",
+            "month": "5",
+            "day": "1"
+        },
+        "time": {
+            "hour": "9",
+            "minute": "6",
+            "meridian": "PM"
+        }
+    },
+    "answers": [
+        {
+            "question": "Which of the following best describes your visit",
+            "command": "choose",
+            "answers": [
+                "Drive",
+                "Carry"
+            ]
+        },
+        {
+            "question": "Please rate your overall satisfaction with your experience",
+            "command": "rate",
+            "answers": [
+                "4",
+                "5"
+            ]
+        },
+        {
+            "question": "During your visit to",
+            "command": "choose",
+            "answers": [
+                "Doughnuts"
+            ]
+        },
+        {
+            "question": "The ease of placing your order",
+            "command": "rate",
+            "answers": [
+                "4",
+                "5"
+            ]
+        },
+        {
+            "question": "The temperature of your food",
+            "command": "rate",
+            "answers": [
+                "4",
+                "5"
+            ]
+        },
+        {
+            "question": "How well Krispy Kreme protected",
+            "command": "rate",
+            "answers": [
+                "3",
+                "4",
+                "5"
+            ]
+        },
+        {
+            "question": "The taste of your food",
+            "command": "rate",
+            "answers": [
+                "3",
+                "5"
+            ]
+        },
+        {
+            "question": "The cleanliness of the shop",
+            "command": "rate",
+            "answers": [
+                "4",
+                "5"
+            ]
+        },
+        {
+            "question": "The accuracy of your order",
+            "command": "rate",
+            "answers": [
+                "4",
+                "5"
+            ]
+        },
+        {
+            "question": "The overall atmosphere",
+            "command": "rate",
+            "answers": [
+                "3",
+                "5"
+            ]
+        },
+        {
+            "question": "The design of this",
+            "command": "rate",
+            "answers": [
+                "4",
+                "5"
+            ]
+        },
+        {
+            "question": "The availability of the doughnuts",
+            "command": "rate",
+            "answers": [
+                "3",
+                "5"
+            ]
+        },
+        {
+            "question": "The speed of your service",
+            "command": "rate",
+            "answers": [
+                "4",
+                "5"
+            ]
+        },
+        {
+            "question": "The freshness of your food",
+            "command": "rate",
+            "answers": [
+                "3",
+                "5"
+            ]
+        },
+        {
+            "question": "The friendliness of the employees",
+            "command": "rate",
+            "answers": [
+                "4",
+                "5"
+            ]
+        },
+        {
+            "question": "The overall value for the price",
+            "command": "rate",
+            "answers": [
+                "4",
+                "5"
+            ]
+        },
+        {
+            "question": "Which of the following best describes why you were not satisfied",
+            "command": "choose",
+            "answers": [
+                "Time waiting in line prior to placing my order",
+                "Other"
+            ]
+        },
+        {
+            "question": "Did you experience a problem during your visit",
+            "command": "rate",
+            "answers": [
+                "no"
+            ]
+        },
+        {
+            "question": "Recommend this",
+            "command": "rate",
+            "answers": [
+                "3",
+                "5"
+            ]
+        },
+        {
+            "question": "Return to this",
+            "command": "rate",
+            "answers": [
+                "4",
+                "5"
+            ]
+        },
+        {
+            "question": "Recommend Krispy Kreme to a friend or family",
+            "command": "choose",
+            "answers": [
+                "Highly Likely",
+                "9",
+                "8",
+                "6",
+                "5"
+            ]
+        },
+        {
+            "question": "Please tell us why you were Highly Satisfied",
+            "command": "note",
+            "answers": [
+                "Love your donuts",
+                "Awesome donuts",
+                "Great donuts"
+            ]
+        },
+        {
+            "question": "Please tell us why you were not Highly Satisfied",
+            "command": "note",
+            "answers": [
+                "I am satisfied",
+                "Who said I'm not?",
+                "I'm not disappointed!"
+            ]
+        },
+        {
+            "question": "How many doughnuts did you purchase",
+            "command": "choose",
+            "answers": [
+                "1-2 doughnuts"
+            ]
+        },
+        {
+            "question": "How much did you spend on this visit",
+            "command": "choose",
+            "answers": [
+                "'.50 BD - 1.50 BD"
+            ]
+        },
+        {
+            "question": "Including this visit, how often do you visit",
+            "command": "choose",
+            "answers": [
+                "A couple of times a week"
+            ]
+        },
+        {
+            "question": "How long ago was your very first visit",
+            "command": "choose",
+            "answers": [
+                "3-5 years ago"
+            ]
+        },
+        {
+            "question": "Did an employee mention",
+            "command": "rate",
+            "answers": [
+                "yes",
+                "no"
+            ]
+        },
+        {
+            "question": "Did an employee suggest",
+            "command": "rate",
+            "answers": [
+                "yes",
+                "no"
+            ]
+        },
+        {
+            "question": "Did the employees smile",
+            "command": "rate",
+            "answers": [
+                "yes"
+            ]
+        },
+        {
+            "question": "Was the Hot Light on when you visited this ",
+            "command": "rate",
+            "answers": [
+                "no"
+            ]
+        },
+        {
+            "question": "Were you thanked",
+            "command": "rate",
+            "answers": [
+                "yes"
+            ]
+        },
+        {
+            "question": "Were you greeted",
+            "command": "rate",
+            "answers": [
+                "yes"
+            ]
+        },
+        {
+            "question": "What was your primary reason",
+            "command": "choose",
+            "answers": [
+                "Promotion",
+                "Previous positive experience",
+                "To try seasonal doughnuts or drinks"
+            ]
+        },
+        {
+            "question": "Please select your gender",
+            "command": "choose",
+            "answers": [
+                "Prefer not to answer"
+            ]
+        },
+        {
+            "question": "Please select your age",
+            "command": "choose",
+            "answers": [
+                "18 to 24",
+                "25 to 34",
+                "Prefer not to answer"
+            ]
+        },
+        {
+            "question": "Please enter your zip",
+            "command": "choose",
+            "answers": [
+                "Prefer not to answer"
+            ]
+        }
+    ]
+}
