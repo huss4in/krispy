@@ -26,4 +26,10 @@ services:
   # Coming Soon..
   # app:
   # container_name: krispy-app
-  #  build:
+  #  build: app
+  #  restart: always
+
+  # selenium:
+  #   container_name: krispy-selenium
+  #   build: selenium
+  #   restart: always
