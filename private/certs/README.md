@@ -1,13 +1,5 @@
 # Certificates
 
-```sh
-.
-├── cert.crt
-├── cert.key
-│
-└── README.md
-```
-
 - ### [`cert.crt`](cert.crt)
 
   ```

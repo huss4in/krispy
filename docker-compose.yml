@@ -18,9 +18,10 @@ services:
       - DOMAIN=$DOMAIN
       - PORT=443
     volumes:
-      - ./krispy/page:/usr/share/nginx/html
+      - ./app/page:/usr/share/nginx/html
       - ./private/certs:/etc/nginx/certs
-      - ./private/logs/nginx:/var/log/nginx
+      - ./private/passwd:/var/lib/nginx
+      - ./private/logs:/var/log/nginx
 
   # Coming Soon..
   # app:

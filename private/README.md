@@ -3,15 +3,15 @@
 ```sh
 .
 ├── .env
-│
 ├── certs/
 │  ├── cert.crt
-│  ├── cert.key
-│  │
-│  └── README.md
+│  └── cert.key
 │
-└── README.md
+└── passwd/
+  └── ssl_passphrase.txt
 ```
+
+---
 
 - ### [`.env`](.env)
 
@@ -40,4 +40,12 @@
     .
     .
     -----END PRIVATE KEY-----
+    ```
+
+- ### [`passwd/`](passwd)
+
+  - ### [`ssl_passphrase.txt`](passwd/ssl_passphrase.txt)
+
+    ```
+    {SSL_PASSPHRASE}
     ```
