@@ -8,7 +8,7 @@
 │  └── cert.key
 │
 └── passwd/
-  └── ssl_passphrase.txt
+   └── ssl_passphrase.txt
 ```
 
 ---
