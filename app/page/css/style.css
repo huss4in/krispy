@@ -1,49 +1,50 @@
-body,
-html {
-  margin: 0;
-  padding: 0;
-  font-family: "Fira Code";
-  color: white;
-  height: 100%;
+:root {
+  --transition-size: 0.5s;
+  --transition-shadow: 0.5s;
 }
 
-.background-image {
+body,
+html {
+  font-family: "Fira Code";
+  color: white;
+  margin: 0;
+  padding: 0;
   background-image: url("../background.jpg");
-  background-position: center;
+  background-position: center top 45%;
   background-size: cover;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 }
 
 /* Position text in the top-left corner */
-.top-left p {
+#header {
+  font-size: calc(3vh + 0.5vw);
+  margin: 0;
   position: absolute;
-  font-size: 3.5vh;
   top: 0.5em;
   left: 0.5em;
-  -webkit-transition: 1s;
-  transition: 1s;
-  margin: 0;
   text-shadow: 0 0 1em black;
+  -webkit-transition: text-shadow calc(var(--transition-shadow)/2) cubic-bezier(0.6, 0.04, 0.98, 0.34);
+  transition: text-shadow calc(var(--transition-shadow)/2) cubic-bezier(0.6, 0.04, 0.98, 0.34);
 }
 
-.top-left p:hover, .top-left p:focus {
-  -webkit-transition: text-shadow 0.5s;
-  transition: text-shadow 0.5s;
-  text-shadow: 0 0 0.3em black;
+#header:hover {
+  text-shadow: 0 0 0.4em black;
+  -webkit-transition: text-shadow var(--transition-shadow) cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transition: text-shadow var(--transition-shadow) cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
-.center {
+#center {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 100vh;
-      grid-template-rows: 100vh;
+  -ms-grid-rows: 93vh;
+      grid-template-rows: 93vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%;
 }
 
-.center #main {
+#center #main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,93 +55,96 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 10vh;
 }
 
-.center #main h1 {
-  text-transform: uppercase;
+#center #main #title {
   font-size: 6vh;
-  margin: 4vh 0;
+  text-transform: uppercase;
+  margin: 3vh 0;
+  -webkit-transition: font-size var(--transition-size) ease-in-out;
+  transition: font-size var(--transition-size) ease-in-out;
   text-shadow: 0 0 1em black;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: text-shadow calc(var(--transition-shadow)/2) cubic-bezier(0.6, 0.04, 0.98, 0.34);
+  transition: text-shadow calc(var(--transition-shadow)/2) cubic-bezier(0.6, 0.04, 0.98, 0.34);
+  -webkit-transition: font-size var(--transition-size) ease-in-out, text-shadow calc(var(--transition-shadow)/2) cubic-bezier(0.6, 0.04, 0.98, 0.34);
+  transition: font-size var(--transition-size) ease-in-out, text-shadow calc(var(--transition-shadow)/2) cubic-bezier(0.6, 0.04, 0.98, 0.34);
 }
 
-.center #main h1:hover, .center #main h1:focus {
-  -webkit-transition: text-shadow 0.5s;
-  transition: text-shadow 0.5s;
-  text-shadow: 0 0 0.3em black;
+#center #main #title:hover {
+  text-shadow: 0 0 0.4em black;
+  -webkit-transition: text-shadow var(--transition-shadow) cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transition: text-shadow var(--transition-shadow) cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
-.center #main div {
+#center #main #time {
   display: -ms-grid;
   display: grid;
   text-align: center;
 }
 
-.center #main div hr {
-  width: 100%;
-  height: 1px;
-  border-radius: 10em;
+#center #main #time hr {
   background-color: white;
   opacity: 0.5;
+  width: 100%;
+  height: 0.1vh;
+  min-height: 1px;
+  max-height: 1px;
+  margin: 2vh 0;
   border: none;
-  -webkit-box-shadow: 0 0 15px 1px black;
-          box-shadow: 0 0 15px 1px black;
-  -webkit-transition: 1s, -webkit-box-shadow 0.5s;
-  transition: 1s, -webkit-box-shadow 0.5s;
-  transition: 1s, box-shadow 0.5s;
-  transition: 1s, box-shadow 0.5s, -webkit-box-shadow 0.5s;
+  border-radius: 1em;
+  -webkit-box-shadow: 0 0 1em 0.1em black;
+          box-shadow: 0 0 1em 0.1em black;
+  -webkit-transition: -webkit-box-shadow var(--transition-shadow);
+  transition: -webkit-box-shadow var(--transition-shadow);
+  transition: box-shadow var(--transition-shadow);
+  transition: box-shadow var(--transition-shadow), -webkit-box-shadow var(--transition-shadow);
 }
 
-.center #main div hr:hover, .center #main div hr:focus {
-  -webkit-transition: -webkit-box-shadow 0.5s;
-  transition: -webkit-box-shadow 0.5s;
-  transition: box-shadow 0.5s;
-  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
-  -webkit-box-shadow: 0 0 5px 1px black;
-          box-shadow: 0 0 5px 1px black;
-}
-
-.center #main div #time {
+#center #main #time #time-left {
   font-size: 3vh;
-  margin: 3vh 0;
+  margin: 4vh 0;
+  -webkit-transition: font-size var(--transition-size) ease-in-out;
+  transition: font-size var(--transition-size) ease-in-out;
   text-shadow: 0 0 1em black;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: text-shadow calc(var(--transition-shadow)/2) cubic-bezier(0.6, 0.04, 0.98, 0.34);
+  transition: text-shadow calc(var(--transition-shadow)/2) cubic-bezier(0.6, 0.04, 0.98, 0.34);
+  -webkit-transition: font-size var(--transition-size) ease-in-out, text-shadow calc(var(--transition-shadow)/2) cubic-bezier(0.6, 0.04, 0.98, 0.34);
+  transition: font-size var(--transition-size) ease-in-out, text-shadow calc(var(--transition-shadow)/2) cubic-bezier(0.6, 0.04, 0.98, 0.34);
 }
 
-.center #main div #time:hover, .center #main div #time:focus {
-  -webkit-transition: text-shadow 0.5s;
-  transition: text-shadow 0.5s;
-  text-shadow: 0 0 0.3em black;
+#center #main #time #time-left:hover {
+  text-shadow: 0 0 0.4em black;
+  -webkit-transition: text-shadow var(--transition-shadow) cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transition: text-shadow var(--transition-shadow) cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
-.center #main div #ms {
-  -ms-grid-column-align: center;
-      justify-self: center;
-  text-align: right;
+#center #main #time #ms {
   font-size: 2vh;
   width: 3em;
-  text-shadow: 0 0 1em black;
+  text-align: right;
+  -ms-grid-column-align: center;
+      justify-self: center;
   margin: 0;
-  -webkit-transition: 1s;
-  transition: 1s;
+  text-shadow: 0 0 1em black;
+  -webkit-transition: text-shadow calc(var(--transition-shadow)/2) cubic-bezier(0.6, 0.04, 0.98, 0.34);
+  transition: text-shadow calc(var(--transition-shadow)/2) cubic-bezier(0.6, 0.04, 0.98, 0.34);
+  -webkit-transition: font-size var(--transition-size) ease-in-out, text-shadow calc(var(--transition-shadow)/2) cubic-bezier(0.6, 0.04, 0.98, 0.34);
+  transition: font-size var(--transition-size) ease-in-out, text-shadow calc(var(--transition-shadow)/2) cubic-bezier(0.6, 0.04, 0.98, 0.34);
 }
 
-.center #main div #ms:hover, .center #main div #ms:focus {
-  -webkit-transition: text-shadow 0.5s;
-  transition: text-shadow 0.5s;
-  text-shadow: 0 0 0.3em black;
+#center #main #time #ms:hover {
+  text-shadow: 0 0 0.4em black;
+  -webkit-transition: text-shadow var(--transition-shadow) cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transition: text-shadow var(--transition-shadow) cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
-.bottom-left {
+#bottom {
+  font-size: calc(1.2vh + 0.2vw);
   position: absolute;
   bottom: 0;
   left: 1em;
-  font-size: 2vh;
   text-shadow: 0 0 0.5em black;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: text-shadow 1s;
+  transition: text-shadow 1s;
 }
 /*# sourceMappingURL=style.css.map */

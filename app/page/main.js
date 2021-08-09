@@ -1,6 +1,6 @@
 const end = new Date("Jan 1, 2022").getTime();
 
-let lastSec = -1;
+let lastSec = 60;
 
 let updateTime = setInterval(() => {
   const time = end - new Date().getTime();
@@ -10,7 +10,7 @@ let updateTime = setInterval(() => {
   const sec = Math.floor((time % 60000) / 1000);
   if (sec !== lastSec) {
     lastSec = sec;
-    document.getElementById("time").innerHTML = Object.entries({
+    document.getElementById("time-left").innerHTML = Object.entries({
       d: Math.floor(time / 86400000),
       h: Math.floor((time % 86400000) / 3600000),
       m: Math.floor((time % 3600000) / 60000),
@@ -24,7 +24,7 @@ let updateTime = setInterval(() => {
   }
 
   if (time < 0) {
-    document.getElementById("time").innerHTML = "Time Expired!";
+    document.getElementById("time-left").innerHTML = "Time Expired!";
     clearInterval(updateTime);
   }
 }, 1);
