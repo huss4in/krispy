@@ -1,4 +1,4 @@
 {
     "liveServer.settings.port": 80,
-    "liveServer.settings.root": "krispy/page",
+    "liveServer.settings.root": "app/page",
 }
