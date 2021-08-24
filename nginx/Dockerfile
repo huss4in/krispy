@@ -1,4 +1,4 @@
-FROM nginx
+FROM nginx:alpine
 
 ENV NGINX_ENVSUBST_OUTPUT_DIR=/etc/nginx
 
