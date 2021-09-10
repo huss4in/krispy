@@ -1,4 +1,4 @@
-FROM python:3.9.6-slim-buster
+FROM python:slim-buster
 
 WORKDIR /usr/src/app
 
@@ -8,4 +8,4 @@ COPY . .
 
 RUN pip install --no-cache-dir --use-feature=in-tree-build ./krispy-bot
 
-CMD [ "python3", "main.py", "192.168.100.50" ]
+CMD [ "python3", "-u", "main.py", "192.168.100.50" ]
