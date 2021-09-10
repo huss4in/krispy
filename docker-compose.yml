@@ -1,6 +1,6 @@
 services:
   nginx:
-    container_name: krispy-nginx
+    container_name: krispy-ngnx
     build: nginx
     restart: always
     ports:
