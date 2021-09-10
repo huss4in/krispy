@@ -16,9 +16,7 @@ let updateTime = setInterval(() => {
       m: Math.floor((time % 3600000) / 60000),
       s: sec,
     })
-      .map((entry) => {
-        return entry[1] ? entry[1] + entry[0] : "";
-      })
+      .map((entry) => (entry[1] ? entry[1] + entry[0] : ""))
       .filter((time) => time)
       .join(" ");
   }
