@@ -1,27 +1,24 @@
 services:
-  cloudflare-ddns:
-    container_name: krispy-ddns
-    image: oznu/cloudflare-ddns
-    restart: always
-    environment:
-      - API_KEY=$API_KEY
-      - ZONE=$DOMAIN
-      - PROXIED=true
-
   nginx:
     container_name: krispy-nginx
     build: nginx
     restart: always
     ports:
-      - 443:443
+      - $PORT:443
     environment:
       - DOMAIN=$DOMAIN
-      - PORT=443
     volumes:
-      - ./logs:/var/log/nginx
-      - ./app/page:/usr/share/nginx/html
-      - ./.private/certs:/etc/nginx/certs
-      - ./.private/passwd:/var/lib/nginx
+      - $LOG:/var/log/nginx
+      - /etc/nginx/certs:/etc/nginx/certs
+
+  ddns:
+    container_name: krispy-ddns
+    image: oznu/cloudflare-ddns
+    restart: always
+    environment:
+      - PROXIED=true
+      - ZONE=$DOMAIN
+      - API_KEY=$API_KEY
 
   # Coming Soon..
   # app:
