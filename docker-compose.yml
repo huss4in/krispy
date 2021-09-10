@@ -18,10 +18,10 @@ services:
       - DOMAIN=$DOMAIN
       - PORT=443
     volumes:
+      - ./logs:/var/log/nginx
       - ./app/page:/usr/share/nginx/html
-      - ./private/certs:/etc/nginx/certs
-      - ./private/passwd:/var/lib/nginx
-      - ./private/logs:/var/log/nginx
+      - ./.private/certs:/etc/nginx/certs
+      - ./.private/passwd:/var/lib/nginx
 
   # Coming Soon..
   # app:
