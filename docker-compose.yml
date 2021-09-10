@@ -18,7 +18,7 @@ services:
     environment:
       - PROXIED=true
       - ZONE=$DOMAIN
-      - API_KEY=$API_KEY
+      - API_KEY=$DDNS_API_KEY
 
   # Coming Soon..
   # app:
